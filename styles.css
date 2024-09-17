@@ -1,0 +1,124 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra superior amarela no topo da página */
+.top-bar {
+    width: 100%;
+    height: 50px; /* Altura da barra */
+    background-color: #FFDA54; /* Cor amarela */
+    position: fixed; /* Fixada no topo */
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; Alinha os ícones à direita */
+    justify-content: space-between;
+    /* padding-right: 50px; Espaçamento à direita aumentado */
+    padding: 0 50px
+}
+
+/* Ícones das redes sociais */
+.social-icons a {
+    color: #1A8156; /* Cor verde dos ícones */
+    margin-left: 10px; /* Espaçamento entre os ícones */
+    font-size: 20px; /* Tamanho dos ícones */
+    text-decoration: none;
+}
+
+/* Ícones das redes sociais */
+.social-icons {
+    flex: 1; /* Ocupa o espaço à direita */
+    display: flex;
+    justify-content: flex-end;
+}
+
+#last-icon {
+    margin-right: 100px;
+}
+
+
+.social-icons a:hover {
+    color: #1A8156; /* Cor dos ícones ao passar o mouse */
+}
+
+
+/* Texto no início da barra */
+.start-text {
+    flex: 1; /* Ocupa o espaço à esquerda */
+    text-align: left;
+    font-size: 16px; /* Tamanho da fonte */
+    color: #1A8156; /* Cor do texto */
+}
+
+/* Texto no meio da barra */
+.middle-text {
+    flex: 2; /* Ocupa o espaço no centro */
+    text-align: center;
+    font-size: 18px; /* Tamanho da fonte */
+    color: #1A8156; /* Cor do texto */
+    font-weight: bold;
+}
+
+/* Barra de menu verde */
+.menu-bar {
+    width: 100%;
+    height: 120px; /* Altura da barra, o dobro da top-bar */
+    background-color: #1A8156; /* Cor verde */
+    position: fixed; /* Fixada abaixo da top-bar */
+    top: 50px; /* Espaço abaixo da top-bar */
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5; /* Fica abaixo da top-bar */
+}
+
+/* Estilo dos links do menu */
+.menu-bar a {
+    color: white; /* Cor do texto dos links */
+    margin: 0 20px; /* Espaçamento entre os links */
+    font-size: 18px; /* Tamanho da fonte */
+    text-decoration: none;
+}
+
+.menu-bar a:hover {
+    text-decoration: underline; /* Sublinhar ao passar o mouse */
+}
+
+.button {
+    background-color: #FFDA54; /* Fundo amarelo */
+    border: none; /* Remove bordas padrão */
+    border-radius: 12px; /* Bordas arredondadas */
+    padding: 12px 24px; /* Espaçamento interno: 12px no topo e embaixo, 24px nas laterais */
+    /* color: #000; Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    text-align: center; /* Alinha o texto no centro */
+    text-decoration: none; /* Remove sublinhado (útil se for um link) */
+    display: inline-block; /* Faz com que o botão ajuste ao tamanho do conteúdo */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo ao passar o mouse */
+    font-weight: bold;
+}
+
+.menu-itens a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; /* Remove sublinhado dos links */
+    margin-right: 20px; /* Espaçamento entre os itens do menu, ajuste conforme necessário */
+}
+
+.button {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    display: inline-flex; /* Alinha o ícone e o texto horizontalmente */
+    align-items: center; /* Alinha o ícone e o texto verticalmente */
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
+
+
+.menu-itens button:hover {
+    background-color: #F2C34B;
+}
